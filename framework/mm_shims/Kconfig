@@ -52,7 +52,7 @@ menu "Morse Micro Shim Configuration"
 
     choice MM_BCF
         prompt "BCF to link when building the FW"
-        default MM_BCF_MF08651_US
+        default MM_BCF_FGH100MAAMD
         help
             The Board Configuration File (BCF) is a configuration file for the Morse Micro chip that provides
             board-specific information and is required for the system to function properly. BCFs for Morse Micro
@@ -71,5 +71,9 @@ menu "Morse Micro Shim Configuration"
             bool  "aw_hm593"
         config MM_BCF_AW_HM593_4V3
             bool  "aw_hm593_4v3"
+        config MM_BCF_FGH100MAAMD
+            bool "fgh100maamd"
+        config MM_BCF_FGH100MABMD
+            bool "fgh100mabmd"
     endchoice
 endmenu
